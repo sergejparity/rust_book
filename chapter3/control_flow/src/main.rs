@@ -13,26 +13,19 @@ fn main() {
 
     loop_example();
 
-    println!("
-    Loop example 2:
-    ");
+    println!("\nLoop example 2:\n");
     loop_example2();
 
-    println!("
-    While example:
-    ");
+    println!("\nWhile example:\n");
     while_example();
 
-    println!("
-    While example 2:");
+    println!("\nWhile example 2:\n");
     while_example2();
 
-    println!("
-    For example:");
+    println!("\nFor example:\n");
     for_example();
 
-    println!("
-    For example 2:");
+    println!("\nFor example 2:\n");
     for_example2();
 }
 
@@ -103,7 +96,7 @@ fn for_example() {
 }
 
 fn for_example2() {
-    for number in (1..11) {
+    for number in 1..11 {
         println!("{number}!");
     }
     println!("LIFTOFF!!!");
