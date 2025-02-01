@@ -61,6 +61,7 @@ where
     println!();
 }
 
+// Update the score of a team. If the team does not exist, add it to the hashmap.
 fn update_score(scores: &mut HashMap<String, i32>, team_name: &str, score: i32) {
     let old_score = scores.entry(String::from(team_name)).or_insert(0);
     *old_score += score;
