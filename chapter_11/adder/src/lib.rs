@@ -1,9 +1,14 @@
 pub fn add(left: u64, right: u64) -> u64 {
+    println!("left: {}, right: {}", left, right);
     left + right
 }
 
 pub fn add_two(a: usize) -> usize {
     a + 2
+}
+
+fn internal_adder(a: u32, b: u32) -> u32 {
+    a + b
 }
 
 #[derive(Debug)]
@@ -69,6 +74,11 @@ mod tests {
     fn it_adds_two() {
         let result = add_two(2);
         assert_eq!(result, 4);
+    }
+
+    #[test]
+    fn internal() {
+        assert_eq!(internal_adder(2, 2), 4);
     }
 
     // #[test]
