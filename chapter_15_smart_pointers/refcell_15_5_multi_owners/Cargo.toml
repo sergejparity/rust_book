@@ -1,0 +1,6 @@
+[package]
+name = "refcell_15_5_multi_owners"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
