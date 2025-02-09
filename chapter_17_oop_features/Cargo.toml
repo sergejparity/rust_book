@@ -1,8 +1,0 @@
-[workspace]
-
-members = [
-    "gui",
-    "traitobj_17_2",
-]
-
-resolver = "2"
